@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 const cards = <Map<String, dynamic>>[
   {'elevation': 0.0, 'label': 'Elevation 0'},
@@ -16,7 +17,13 @@ class CardsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Cards Screen')),
+      appBar: AppBar(
+        title: const Text('Cards Screen'),
+        systemOverlayStyle: SystemUiOverlayStyle(
+          statusBarColor: Colors.green,
+          statusBarIconBrightness: Brightness.light,
+        ),
+      ),
       body: _CardsView(),
     );
   }
