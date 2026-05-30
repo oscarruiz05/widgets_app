@@ -112,14 +112,16 @@ class _CardType2 extends StatelessWidget {
                 onPressed: () {},
               ),
             ),
-            Align(alignment: Alignment.bottomLeft, child: Text('$label - Outlined')),
+            Align(
+              alignment: Alignment.bottomLeft,
+              child: Text('$label - Outlined'),
+            ),
           ],
         ),
       ),
     );
   }
 }
-
 
 class _CardType3 extends StatelessWidget {
   final double elevation;
@@ -144,7 +146,10 @@ class _CardType3 extends StatelessWidget {
                 onPressed: () {},
               ),
             ),
-            Align(alignment: Alignment.bottomLeft, child: Text('$label - Outlined')),
+            Align(
+              alignment: Alignment.bottomLeft,
+              child: Text('$label - Outlined'),
+            ),
           ],
         ),
       ),
@@ -176,7 +181,9 @@ class _CardType4 extends StatelessWidget {
             child: Container(
               decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20)),
+                borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(20),
+                ),
               ),
               child: IconButton(
                 icon: Icon(Icons.move_to_inbox),
@@ -184,7 +191,22 @@ class _CardType4 extends StatelessWidget {
               ),
             ),
           ),
-          Align(alignment: Alignment.bottomLeft, child: Text('$label - Image')),
+          Align(
+            alignment: Alignment.bottomLeft,
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+              decoration: BoxDecoration(
+                color: colors.primary,
+                borderRadius: BorderRadius.only(
+                  bottomRight: Radius.circular(20),
+                ),
+              ),
+              child: Text(
+                '$label - Image',
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+          ),
         ],
       ),
     );
