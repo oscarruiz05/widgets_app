@@ -28,6 +28,13 @@ class AppTheme {
         'Selected color index must be less than ${colorList.length}',
       );
 
-  ThemeData getTheme() =>
-      ThemeData(useMaterial3: true, colorSchemeSeed: colorList[selectedColor]);
+  ThemeData getTheme() => ThemeData(
+    useMaterial3: true,
+    colorSchemeSeed: colorList[selectedColor],
+    appBarTheme: const AppBarTheme(
+      // backgroundColor: Colors.red,
+      // elevation: 0,
+      centerTitle: false,
+    ),
+  );
 }
