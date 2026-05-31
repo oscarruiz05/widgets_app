@@ -40,4 +40,11 @@ const appMenuItems = <MenuItem>[
     link: '/progress',
     icon: Icons.refresh_outlined,
   ),
+  MenuItem(
+    title: 'Snackbars y Dialogs',
+    subTitle: 'Indicadores de proceso para tareas asincrónicas',
+    name: SnacbarScreen.name,
+    link: '/snackbars',
+    icon: Icons.info_outline,
+  ),
 ];
