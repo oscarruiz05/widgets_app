@@ -47,4 +47,11 @@ const appMenuItems = <MenuItem>[
     link: '/snackbars',
     icon: Icons.info_outline,
   ),
+  MenuItem(
+    title: 'Animaciones',
+    subTitle: 'Animaciones controladas y predefinidas',
+    name: AnimatedScreen.name,
+    link: '/animated',
+    icon: Icons.animation_outlined,
+  ),
 ];
