@@ -75,4 +75,11 @@ const appMenuItems = <MenuItem>[
     link: '/infinite-scroll',
     icon: Icons.list_alt_outlined,
   ),
+  MenuItem(
+    title: 'Counter Screen',
+    subTitle: 'Un contador con Riverpod',
+    name: ConuterScreen.name,
+    link: '/counter',
+    icon: Icons.countertops_outlined,
+  ),
 ];
