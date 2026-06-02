@@ -61,4 +61,11 @@ const appMenuItems = <MenuItem>[
     link: '/ui-controls',
     icon: Icons.build_circle_outlined,
   ),
+  MenuItem(
+    title: 'App Tutorial',
+    subTitle: 'Una aplicación de ejemplo para aprender Flutter',
+    name: AppTutorialScreen.name,
+    link: '/tutorial',
+    icon: Icons.school_outlined,
+  ),
 ];
