@@ -54,4 +54,11 @@ const appMenuItems = <MenuItem>[
     link: '/animated',
     icon: Icons.animation_outlined,
   ),
+  MenuItem(
+    title: 'UI Controls',
+    subTitle: 'Controles de Flutter como Switch o Checkbox',
+    name: UiControlsScreen.name,
+    link: '/ui-controls',
+    icon: Icons.build_circle_outlined,
+  ),
 ];
